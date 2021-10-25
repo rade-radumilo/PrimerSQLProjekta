@@ -21,11 +21,13 @@ CREATE TABLE [dbo].[Adresar](
 	[Prezime] [varchar](50) NOT NULL,
 	[Adresa] [varchar](255) NOT NULL,
 	[MestoStanovanja] [varchar](50) NOT NULL,
-	[PostanskiBroj] [varchar](50) NOT NULL,
+	[PostanskiBroj] [varchar](30) NOT NULL,
 	[Drzava] [varchar](50) NOT NULL,
 	[DatumRodjenja] [date] NOT NULL,
 	[KontaktTelefon] [varchar](32) NULL,
-	[EmailAdresa] [varchar](255) NULL
+	[EmailAdresa] [varchar](255) NULL,
+	[AdresaIzLicneKarte] [varchar](255) NULL
+	PRIMARY KEY ([KomitentID])
 ) ON [PRIMARY]
 GO
 
